@@ -1,0 +1,41 @@
+ body {
+     font-family: 'Helvetica Neue', sans-serif;
+     background-color: #e0e0e0;
+     margin: 0;
+     padding: 0;
+}
+ a {
+     color: darkred;
+     text-decoration: none;
+}
+ a:hover {
+     text-decoration: underline;
+}
+ .hidden-block {
+     position: fixed;
+     top: 75%;
+     left: 0;
+     transform: translateY(-50%);
+     width: 20px;
+     height: 40px;
+     background-color: orange;
+     overflow: hidden;
+     transition: width 0.3s;
+     cursor: pointer;
+     border-top-right-radius: 10px;
+     border-bottom-right-radius: 10px;
+}
+ .hidden-block:hover {
+     width: 200px;
+}
+ .hidden-content {
+     padding-left: 30px;
+     padding-top: 10px;
+     color: black;
+     font-size: 16px;
+}
+ .nure-image {
+     max-width: 50%;
+     max-height: 50%;
+}
+ 

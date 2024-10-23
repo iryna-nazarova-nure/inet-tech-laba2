@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Demonstration</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 {
+            color: green;
+            text-align: center;
+        }
+
+        .highlight {
+            background-color: lightblue;
+            font-weight: bold;
+        }
+
+        #main-content {
+            border: 2px solid gray;
+            padding: 20px;
+        }
+
+        .positioned {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: lightcoral;
+            padding: 15px;
+        }
+
+        .sidebar {
+            float: left;
+            width: 30%;
+            background-color: lightyellow;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .content {
+            float: right;
+            width: 65%;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Lab Work</h1>
+
+    <p style="color: darkgreen; font-size: 18px;">This paragraph has a dark green color, defined using inline styles.</p>
+
+    <div id="main-content" class="clearfix">
+        <div class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>Main Content</h2>
+            <p>This is the main content of the page. Different styles can be applied to format it.</p>
+            <p class="highlight">This paragraph is highlighted using the "highlight" class.</p>
+        </div>
+    </div>
+
+    <div class="positioned">I am positioned using absolute positioning!</div>
+
+    <div class="hidden-block">
+        <div class="hidden-content">
+            <table>
+                <tr>
+                    <td><a href="https://nure.ua">https://nure.ua</a></td>
+                    <td><img src="./nure.png" class="nure-image"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
