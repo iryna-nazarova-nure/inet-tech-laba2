@@ -1,47 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Demonstration</title>
+    <title>Демонстрація CSS</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         h1 {
-            color: green;
+            color: blue;
             text-align: center;
         }
 
         .highlight {
-            background-color: lightblue;
+            background-color: yellow;
             font-weight: bold;
         }
 
         #main-content {
-            border: 2px solid gray;
-            padding: 20px;
+            border: 1px solid black;
+            padding: 15px;
         }
 
         .positioned {
             position: absolute;
             top: 20px;
             right: 20px;
-            background-color: lightcoral;
-            padding: 15px;
+            background-color: lightgreen;
+            padding: 10px;
         }
 
         .sidebar {
             float: left;
             width: 30%;
-            background-color: lightyellow;
-            padding: 15px;
+            background-color: lightgray;
+            padding: 10px;
             box-sizing: border-box;
         }
 
         .content {
             float: right;
             width: 65%;
-            padding: 15px;
+            padding: 10px;
             box-sizing: border-box;
         }
 
@@ -52,41 +51,50 @@
         }
     </style>
 </head>
-
 <body>
-    <h1>CSS Lab Work</h1>
+    <h1>Лабораторна робота з CSS</h1>
 
-    <p style="color: darkgreen; font-size: 18px;">This paragraph has a dark green color, defined using inline styles.</p>
+    <p style="color: red; font-size: 18px;">Цей абзац має червоний колір, заданий за допомогою inline-стилів.</p>
 
     <div id="main-content" class="clearfix">
         <div class="sidebar">
-            <h2>Navigation</h2>
+            <h2>Навігація</h2>
             <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Посилання 1</a></li>
+                <li><a href="#">Посилання 2</a></li>
+                <li><a href="#">Посилання 3</a></li>
             </ul>
         </div>
 
         <div class="content">
-            <h2>Main Content</h2>
-            <p>This is the main content of the page. Different styles can be applied to format it.</p>
-            <p class="highlight">This paragraph is highlighted using the "highlight" class.</p>
+            <h2>Основний контент</h2>
+            <p>Це основний контент сторінки. Можна використовувати різні стилі для його форматування.</p>
+            <p class="highlight">Цей абзац виділений за допомогою класу "highlight".</p>
         </div>
     </div>
 
-    <div class="positioned">I am positioned using absolute positioning!</div>
+    <div class="positioned">Я розташований за допомогою абсолютного позиціонування!</div>
 
     <div class="hidden-block">
         <div class="hidden-content">
-            <table>
+            <table border="1">
                 <tr>
-                    <td><a href="https://nure.ua">https://nure.ua</a></td>
-                    <td><img src="./nure.png" class="nure-image"></td>
+                    <td width="100px" style="color: black; background-color: chocolate;">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="nure.png">
+                                </td>
+                                <td>
+                                    Сайт:<br><a href="https://nure.ua">https://nure.ua</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td id="hidden-block-tip" width="15px">Contacts</td>
                 </tr>
             </table>
         </div>
     </div>
 </body>
-
 </html>
